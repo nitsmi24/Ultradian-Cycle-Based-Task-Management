@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #f3f8ff, #ddeeff);
+    padding: 40px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a4eab;
+  }
+  
+  .task-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .task-form button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .task-form input:focus,
+  .task-form select:focus {
+    border-color: #1a4eab;
+    outline: none;
+  }
+  
+  .task-form button {
+    background-color: #1a4eab;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .task-form button:hover {
+    background-color: #1552c7;
+  }
+  
+  .status {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #e7f0ff;
+    border-left: 6px solid #1a4eab;
+    border-radius: 10px;
+  }
+  
+  .status h2 {
+    margin-bottom: 10px;
+  }
+  
+  .timer {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .suggestion-box {
+    margin-top: 10px;
+    font-size: 17px;
+    background: #fef5dd;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 6px solid #ffb703;
+  }
+  
+  .task-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  #taskList {
+    list-style: none;
+  }
+  
+  #taskList li {
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 6px solid #1a4eab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #taskList li .meta {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+  }
+  
