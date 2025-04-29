@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultradian Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Ultradian Cycle Task Manager</h1>
+
+    <section class="task-form">
+      <input type="text" id="taskName" placeholder="Task Name" />
+      <select id="difficulty">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="datetime-local" id="deadline" />
+      <select id="priority">
+        <option value="normal">Normal</option>
+        <option value="urgent">Urgent</option>
+      </select>
+      <button onclick="addTask()">➕ Add Task</button>
+    </section>
+
+    <section class="status">
+      <h2>Current Energy Phase: <span id="cycleStatus">High Energy</span></h2>
+      <div class="timer">
+        ⏳ Next phase in: <span id="countdown">--:--</span>
+      </div>
+      <div class="suggestion-box">
+        🧩 Suggested Task: <span id="suggestedTask">-</span>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2>📋 Task List</h2>
+      <ul id="taskList"></ul>
+    </section>
+
+    <footer>
+      <p>Made with 🧠 by Nitya</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
